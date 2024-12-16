@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import { Hero } from "../components/hero";
 import { Navigation } from "../components/navigation";
 import { SkillsSection } from "../components/skills-section";
+import { ClientsSection } from "../components/clients-section";
 ---
 
 <Layout>
@@ -14,7 +15,7 @@ import { SkillsSection } from "../components/skills-section";
     currentlyUsing={[
       "HTML/CSS/Typescript",
       "React/NextJS",
-      "CSS Modules, TailwindCSS",
+      "(S)CSS Modules, TailwindCSS",
       "Jest",
       "Storybook",
       "NodeJS",
@@ -26,6 +27,25 @@ import { SkillsSection } from "../components/skills-section";
       "GraphQL",
       "Prisma w/ Postgres",
       "Chakra UI",
+    ]}
+  />
+
+  <ClientsSection
+    clients={[
+      {
+        logo: "/images/clients/via-outlets.png",
+        name: "VIA Outlets",
+        description:
+          "A multi-tenant platform built to support twelve different outlet center websites, along with a corporate site.",
+        links: ["https://viaoutlets.com", "https://bataviastad.nl"],
+      },
+      {
+        logo: "/images/clients/inter.png",
+        name: "Inter Milan F.C.",
+        description:
+          "The marketing website for Inter Milan F.C. Including streaming services and news.",
+        links: ["https://www.inter.it/en"],
+      },
     ]}
   />
 </Layout>

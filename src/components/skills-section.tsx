@@ -1,5 +1,5 @@
 import { List, ListItem } from "./elements/list";
-import { Heading } from "./heading";
+import { Heading } from "./elements/heading";
 
 type SkillsSectionProps = {
   currentlyUsing: string[];

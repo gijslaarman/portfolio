@@ -1,5 +1,5 @@
-import { Heading } from "./heading";
-import { Link } from "./link";
+import { Heading } from "./elements/heading";
+import { Link } from "./elements/link";
 
 export const Hero = () => {
   return (
