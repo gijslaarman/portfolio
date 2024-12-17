@@ -1,51 +1,18 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { Hero } from "../components/hero";
-import { Navigation } from "../components/navigation";
-import { SkillsSection } from "../components/skills-section";
-import { ClientsSection } from "../components/clients-section";
+import { Hero } from "../components/sections/hero";
+import { Header } from "../components/layout/header";
+import { SkillsSection } from "../components/sections/skills-section";
+import { ClientsSection } from "../components/sections/clients-section";
+import { WorkExperienceSection } from "../components/sections/work-experience-section";
+import { AboutMeSection } from "../components/sections/about-me";
 ---
 
 <Layout>
-  <Navigation />
-
+  <Header />
   <Hero />
-
-  <SkillsSection
-    currentlyUsing={[
-      "HTML/CSS/Typescript",
-      "React/NextJS",
-      "(S)CSS Modules, TailwindCSS",
-      "Jest",
-      "Storybook",
-      "NodeJS",
-      "Docker, Azure Devops, Github actions",
-      "Contentstack/Contentful",
-    ]}
-    usedInPast={[
-      "Vue, Angular, Svelte",
-      "GraphQL",
-      "Prisma w/ Postgres",
-      "Chakra UI",
-    ]}
-  />
-
-  <ClientsSection
-    clients={[
-      {
-        logo: "/images/clients/via-outlets.png",
-        name: "VIA Outlets",
-        description:
-          "A multi-tenant platform built to support twelve different outlet center websites, along with a corporate site.",
-        links: ["https://viaoutlets.com", "https://bataviastad.nl"],
-      },
-      {
-        logo: "/images/clients/inter.png",
-        name: "Inter Milan F.C.",
-        description:
-          "The marketing website for Inter Milan F.C. Including streaming services and news.",
-        links: ["https://www.inter.it/en"],
-      },
-    ]}
-  />
+  <SkillsSection />
+  <ClientsSection />
+  <WorkExperienceSection />
+  <AboutMeSection />
 </Layout>

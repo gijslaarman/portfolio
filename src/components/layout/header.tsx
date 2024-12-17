@@ -1,5 +1,5 @@
 // Currently not really a navigation, but will be in the future, also has no semantic value currently.
-export const Navigation = () => {
+export const Header = () => {
   return (
     <div className="px-4 md:px-6 flex items-center gap-2 py-6" aria-hidden>
       <svg

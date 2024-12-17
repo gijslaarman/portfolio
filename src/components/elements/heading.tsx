@@ -3,15 +3,15 @@ import clsx from "clsx";
 
 const headingVariants = cva("font-regular whitespace-pre-wrap", {
   variants: {
-    level: {
+    size: {
       h1: "text-md md:text-4xl lg:text-5xl",
       h2: "text-md font-bold md:text-2xl",
       h3: "text-sm font-bold md:text-lg",
-      h4: "text-xl md:text-2xl",
+      h4: "text-sm font-bold md:text-base",
     },
   },
   defaultVariants: {
-    level: "h2",
+    size: "h2",
   },
 });
 
@@ -24,13 +24,13 @@ interface HeadingProps extends VariantProps<typeof headingVariants> {
 
 export const Heading = ({
   as: Component = "h1",
-  level,
+  size,
   className,
   children,
   id,
 }: HeadingProps) => (
   <Component
-    className={clsx(headingVariants({ level: level || Component }), className)}
+    className={clsx(headingVariants({ size: size || Component }), className)}
     id={id}
   >
     {children}

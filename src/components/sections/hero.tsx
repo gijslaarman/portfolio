@@ -1,10 +1,11 @@
-import { Heading } from "./elements/heading";
-import { Link } from "./elements/link";
+import { Heading } from "../elements/heading";
+import { Link } from "../elements/link";
+import { Section } from "../elements/section";
 
 export const Hero = () => {
   return (
-    <section className="container whitespace-pre pt-9 pb-10 md:pt-24 lg:pt-32 md:pb-24 lg:pb-32">
-      <Heading as="h1" className="mb-8">
+    <Section className="container">
+      <Heading as="h1" className="mb-8 whitespace-pre">
         Hi, I'm <b>Gijs</b> — a creator at heart.
         {`\n`}
         <b>Expert in frontend.</b>
@@ -57,6 +58,6 @@ export const Hero = () => {
           </Link>
         </li>
       </ul>
-    </section>
+    </Section>
   );
 };
