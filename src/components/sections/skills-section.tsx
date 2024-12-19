@@ -23,7 +23,7 @@ export const SkillsSection = () => {
   return (
     <Section isMuted>
       <div className="container">
-        <div className="max-w-[40em]">
+        <div className="max-w-screen-sm">
           <Heading as="h2" className="mb-4" id="currently-using">
             Technologies I'm using
           </Heading>

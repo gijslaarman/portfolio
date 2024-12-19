@@ -5,7 +5,7 @@ export const AboutMeSection = () => {
   return (
     <Section>
       <div className="container">
-        <div className="max-w-[40em]">
+        <div className="max-w-screen-sm">
           <Heading as="h2" className="mb-4" id="about-me">
             About me
           </Heading>
