@@ -1,10 +1,10 @@
 import { cva, type VariantProps } from "class-variance-authority";
 import clsx from "clsx";
 
-const headingVariants = cva("font-regular whitespace-pre-wrap", {
+const headingVariants = cva("font-heading whitespace-pre-wrap", {
   variants: {
     size: {
-      h1: "text-md md:text-4xl lg:text-5xl",
+      h1: "text-md font-regular md:text-4xl lg:text-5xl",
       h2: "text-md font-bold md:text-2xl",
       h3: "text-sm font-bold md:text-lg",
       h4: "text-sm font-bold md:text-base",

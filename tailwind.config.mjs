@@ -6,9 +6,10 @@ export default {
       colors: {
         highlight: "#1A85FF",
       },
-      fontFamily: {
-        display: "Archivo, Open Sans, system-ui, sans-serif",
-      },
+    },
+    fontFamily: {
+      heading: ["Archivo", "Open Sans", "system-ui", "sans-serif"],
+      body: ["Open Sans", "system-ui", "sans-serif"],
     },
     container: {
       center: true,

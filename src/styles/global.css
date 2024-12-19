@@ -8,4 +8,9 @@
   outline-width: 2px;
   border-radius: 4px;
   @apply outline-highlight;
+  @apply text-highlight;
+}
+
+b {
+  @apply font-bold;
 }
